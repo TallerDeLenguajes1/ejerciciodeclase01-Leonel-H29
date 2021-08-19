@@ -39,14 +39,14 @@ namespace AdivinarNumero
 
                 catch (OverflowException ex)
                 {
-                    Console.WriteLine($"¡ERROR! ESTO SE DEBE AL QUE VALOR INGRESADO ES DEMASIADO GRANDE \n");
+                    Console.WriteLine($"¡ERROR! ESTO SE DEBE AL QUE VALOR INGRESADO ES DEMASIADO GRANDE: {ex} \n");
                     numero_elegido = -1;
                 }
 
 
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"¡ERROR! ESTO PUEDE DEBERSE AL TIPO DE DATO DEL VALOR INGRESADO \n");
+                    Console.WriteLine($"¡ERROR! ESTO PUEDE DEBERSE AL TIPO DE DATO DEL VALOR INGRESADO:{ex} \n");
                     numero_elegido = -1;
                 }
 
